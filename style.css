@@ -1,0 +1,172 @@
+:root {
+--color-primary: #4B69FD;
+--color-secondary: #FFF9EB;
+--color-tertiary: #C4C4C4;
+--color-button: #fe652b;
+--color-button-hover: #e55720;
+--color-text: #444444;
+--color-white: #FFFFFF;
+}
+
+/* Estilos generales */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+height: 100vh;
+background-color: var(--color-primary);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.main-content {
+display: flex;
+flex-direction: column;
+height: 100%;
+width: 100%;
+}
+
+/* Banner */
+.header-banner {
+flex: 40%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 40px 0 0;
+}
+/* Sección de entrada */
+.input-section {
+flex: 60%;
+background-color: var(--color-secondary);
+border: 1px solid #000;
+border-radius: 64px 64px 0 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+width: 100%;
+}
+
+/* Títulos */
+.main-title {
+font-size: 48px;
+font-family: "Merriweather", serif;
+font-weight: 900;
+font-style: italic;
+color: var(--color-white);
+}
+
+.section-title {
+font-family: "Inter", serif;
+font-size: 36px;
+font-weight: 700;
+color: var(--color-primary);
+margin: 10px 0;
+text-align: center;
+}
+
+/* Contenedores de entrada y botón */
+.input-wrapper {
+display: flex;
+justify-content: center;
+width: 100%;
+max-width: 600px;
+margin-top: 20px;
+}
+
+.input-name {
+width: 100%;
+padding: 10px;
+border: 2px solid #000;
+border-radius: 25px 0 0 25px;
+font-size: 16px;
+}
+
+/* --- Bloque 1: Contenedor de los botones --- */
+.button-container {
+    display: flex;
+    justify-content: center; /* Alinea los botones al centro */
+    align-items: center;
+    gap: 20px; /* Agrega un espacio de 20px entre los botones */
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* --- Bloque 2: Estilos de los botones --- */
+.button-draw,
+.button-reset {
+    flex: 1; /* Esto hace que ambos botones tengan el mismo tamaño */
+    padding: 10px 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos específicos para el botón "Sortear Amigo" */
+.button-draw {
+    background-color: var(--color-button);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido (texto e ícono) del botón */
+}
+
+.button-draw img {
+    margin-right: 10px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Estilos específicos para el botón "Reiniciar" */
+.button-reset {
+    background-color: #3f51b5;
+    color: var(--color-white);
+    border: 2px solid #3f51b5;
+}
+
+.button-reset:hover {
+    background-color: #2c3e9a;
+}
+
+/* Estilos específicos para el botón "Reiniciar" */
+.button-reset {
+background-color: #3f51b5;
+color: var(--color-white);
+border: 2px solid #3f51b5;
+}
+
+.button-reset:hover {
+background-color: #2c3e9a;
+}
+/* Estilos de botón de "Añadir" */
+.button-add {
+    background-color: var(--color-button);
+    color: var(--color-white);
+    padding: 10px 30px; /* Ajusta el padding para hacerlo más largo */
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: var(--color-button-hover);
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #05DF05;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
